@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+       <div class="mb-3">
+            <form ngNativeValidate>
+                <label for="input1" class="form-label">RA:</label>
+                <input type="text" class="form-control col-3" id="ra" aria-describedby="ra" name="ra" [(ngModel)]="ra" required>
+                
+                <label for="input1" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="nome" aria-describedby="nome" name="nome"  [(ngModel)]="nome" required>
+                
+                <label for="input1" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" [(ngModel)]="email" required>
+                
+                <label for="input1" class="form-label">Celular:</label>
+                <input type="number" class="form-control" required placeholder="(00) 00000-0000" maxlength="11" id="cel" aria-describedby="cel" name="cel" [(ngModel)]="cel" aria required> 
+                
+                <button  class="btn btn-primary m-2" type="submit">Salvar</button>
+                <button  class="btn btn-primary m-2" type="reset">Limpar formulário</button>
+            </form>
+        </div>  
+    </div>    
+</div>
